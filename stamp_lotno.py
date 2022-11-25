@@ -43,7 +43,7 @@ for c in contours:
     (x, y, w, h) = cv2.boundingRect(c)
     cv2.rectangle(resized_lotno, (x, y), (x + w, y + h), (0, 0, 255), 2)
     cv2.rectangle(resized_mod, (x, y), (x + w, y + h), (0, 0, 255), 2)
-
+    
 cv2.imshow("Original", resized_lotno)
 cv2.imshow("Modified", resized_mod)
 #cv2.imshow("Diff", diff)
